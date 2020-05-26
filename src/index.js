@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import * as Math from "./maths.js"
+//1. Create a new React app.
+//2. Create a App.jsx component.
+//3. Create a Header.jsx component that renders a <header> element
+//to show the Keeper App name in an <h1>.
+//4. Create a Footer.jsx component that renders a <footer> element
+//to show a copyright message in a <p> with a dynamically updated year.
+//5. Create a Note.jsx component to show a <div> element with a
+//<h1> for a title and a <p> for the content.
+//6. Make sure that the final website is styled like the example shown here:
+//https://l1pp6.csb.app/
+
+//HINT: You will need to study the classes in teh styles.css file to appy styling.
 
 
-ReactDOM.render(
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./component/App"
 
-  <ul>
-    <li>{Math.add(1,2)}</li>
-    <li>{Math.subtract(7,3)}</li>
-    <li>{Math.mulitply(2,2)}</li>
-    <li>{Math.divide(5,2)}</li>
-  </ul>
 
-  ,
-  document.getElementById('root')
+ReactDOM.render (
+    <App />
+,
+document.getElementById("root")
 );
+
+
+
